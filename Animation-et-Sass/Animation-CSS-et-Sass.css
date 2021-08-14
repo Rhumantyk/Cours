@@ -65,14 +65,13 @@ div
 
 
 
-.Exemple_a 
+.Ta 
 {
 	display: flex;
 	flex-wrap: wrap; /* Retour à la ligne quand plus de place */
-
 }
 
-.Exemple_a_e1
+.T1
 {
 	margin-left: 25px;
 	background-color: #2ECC71;
@@ -81,7 +80,7 @@ div
 	border-radius: 30px;
 }
 
-.Exemple_a_e2
+.T2
 {
 	margin-left: 25px;
 	background-color: #2ECC71;
@@ -90,7 +89,7 @@ div
 	border-radius: 30px;
 }
 
-.Exemple_a_e3
+.T3
 {
 	margin-left: 25px;
 	background-color: #2ECC71;
@@ -99,7 +98,7 @@ div
 	border-radius: 30px;
 }
 
-.Exemple_a_e4
+.T4
 {
 	margin-left: 25px;
 	background-color: #2ECC71;
@@ -108,7 +107,7 @@ div
 	border-radius: 30px;
 }
 
-.Exemple_a_e5
+.T5
 {
 	margin-left: 25px;
 	background-color: #2ECC71;
@@ -117,7 +116,7 @@ div
 	border-radius: 30px;
 }
 
-.Exemple_a_e6
+.T6
 {
 	margin-left: 25px;
 	background-color: #2ECC71;
@@ -126,7 +125,7 @@ div
 	border-radius: 30px;
 }
 
-.Exemple_a_e7
+.T7
 {
 	margin-left: 25px;
 	background-color: #2ECC71;
@@ -135,7 +134,7 @@ div
 	border-radius: 30px;
 }
 
-.Exemple_a_e8
+.T8
 {
 	margin-left: 25px;
 	background-color: #2ECC71;
@@ -171,53 +170,3 @@ div
 	justify-content: center;
 	align-items: center;
 }
-
-
-
-
-
-
-/*
-
-.Exemple_Double_a
-{
-	display: flex;
-
-}
-
-.e
-{
-	background-color: #F44336;
-	border: 3px solid black;
-	width: 35%;
-	border-radius: 30px;
-}
-
-.r
-{
-	margin-left: 25px;
-	height: 140px;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	background-color: #AEB6BF;
-	border: 3px solid black;
-	width: 20%;
-	border-radius: 30px;
-}
-
-
-.plus
-{
-	margin: 20px;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-
-}
-
-*/
