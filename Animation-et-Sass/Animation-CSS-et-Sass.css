@@ -65,7 +65,7 @@ div
 
 
 
-.Ta 
+.A
 {
 	display: flex;
 	flex-wrap: wrap; /* Retour à la ligne quand plus de place */
