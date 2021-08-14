@@ -12,8 +12,8 @@
 
 
 	<h2>A) SASS</h2>
-		<div class="A">
-			<div class="T8">
+		<section class="A">
+			<div class="T1">
 				<pre>
 					<code>
 	   Rangement (VSC, ...)
@@ -28,6 +28,155 @@
 					</code>
 				</pre>
 			</div>
-		</div>
+
+			<div class="T6">
+				<pre>
+					<code>
+				BEM
+						
+			author_portrait--small
+
+			Block  Element  Modifier
+
+		Block : Composant 
+		Element : Élément au sein du composant 
+		Modfier : Variante de Block ou Element
+
+
+			    Sass + BEM
+
+  .block__element--modifier (CSS) = .block &__element et &--modificateur
+					</code>
+				</pre>
+			</div>
+
+			<div class="T7">
+				<pre>
+					<code>
+							Map
+
+		Map = Liste de Clés/valeurs (couleur/calcul/booléen) à appeler via "map-get"
+
+		$map: (cle1: valeur1, cle2: valeur2, cle3: valeur3);
+
+		.block 
+		{
+			font-size: map-get($map, cle1);
+		}
+					</code>
+				</pre>
+			</div>
+		
+
+
+			<div class="T9">
+				<pre>
+					<code>
+		       Préprocesseurs
+
+	Variable classique
+
+	$nomdelavariable: colueur/calcul/booléen
+
+
+	Variable à liste
+
+	$nomdelavariableàliste: V1 V2 V3 V4;
+	.class (Si l'on veut choisir une seule valeur)
+	{
+		font-size: nth($NomDeLaVariableÀListe, 4);
+	}
+
+
+	Variable à liste + map
+	On appelle la map et une ou plusieurs valeurs
+
+	$nomdelavariableàliste+map: (logo:V, heading:V, project-heading:V, logo:V); → .class{map-get($font-size, label);}
+
+
+	Boucles
+
+	@for
+	@while
+	@if
+
+
+	Conditions
+
+	@if [condition]
+	{
+	// CSS si vrai
+	} 
+	@else
+	{
+	// CSS si faux
+	}
+	else if
+	{
+	// CSS si ni vrai ni faux
+	}
+
+	a == b : a est egale à b
+	a > b : a est plus grand que b
+	a < b : a est plus petit que b
+	a >= b : a est plus grand ou égal à b
+	a <= b : a est plus petit ou égal à b
+					</code>
+				</pre>
+			</div>
+
+			<div class="T1">
+				<pre>
+					<code>
+		Nesting
+
+nav 
+{
+   ul 
+   {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+   }
+
+   li 
+   {
+      display: inline-block;
+   }
+
+   a 
+   {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+   }
+}
+					</code>
+				</pre>
+			</div>
+
+			<div class="T1">
+				<pre>
+					<code>
+	    Combinateurs
+
+ Parent → .parent {}
+ Descendant → .parent .descendant {}
+ Parent > Enfant → .parent > .child {}
+ Adjacent .parent + .adjacent {}
+
+ & + Pseudo-classe. &:hover/...{}
+					</code>
+				</pre>
+			</div>
+
+			<div class="T1">
+				<pre>
+					<code>
+
+					</code>
+				</pre>
+			</div>
+		</section>
 </body>
 </html>

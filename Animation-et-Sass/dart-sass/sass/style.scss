@@ -32,6 +32,8 @@ h2
 section
 {
 	padding-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 p
@@ -52,7 +54,7 @@ div
 	margin-bottom: 5px;
 }
 
-.Exemple_a_e1
+.T1
 {
 	margin-left: 25px;
 	background-color: #2ECC71;
@@ -61,7 +63,7 @@ div
 	border-radius: 30px;
 }
 
-.Exemple_a_e2
+.T2
 {
 	margin-left: 25px;
 	background-color: #2ECC71;
@@ -70,7 +72,7 @@ div
 	border-radius: 30px;
 }
 
-.Exemple_a_e3
+.T3
 {
 	margin-left: 25px;
 	background-color: #2ECC71;
@@ -79,7 +81,7 @@ div
 	border-radius: 30px;
 }
 
-.Exemple_a_e4
+.T4
 {
 	margin-left: 25px;
 	background-color: #2ECC71;
@@ -88,7 +90,7 @@ div
 	border-radius: 30px;
 }
 
-.Exemple_a_e5
+.T5
 {
 	margin-left: 25px;
 	background-color: #2ECC71;
@@ -97,7 +99,7 @@ div
 	border-radius: 30px;
 }
 
-.Exemple_a_e6
+.T6
 {
 	margin-left: 25px;
 	background-color: #2ECC71;
@@ -106,7 +108,7 @@ div
 	border-radius: 30px;
 }
 
-.Exemple_a_e7
+.T7
 {
 	margin-left: 25px;
 	background-color: #2ECC71;
@@ -115,11 +117,20 @@ div
 	border-radius: 30px;
 }
 
-.Exemple_a_e8
+.T8
 {
 	margin-left: 25px;
 	background-color: #2ECC71;
 	border: 3px solid black;
 	width: 45%;
+	border-radius: 30px;
+}
+
+.T9
+{
+	margin-left: 25px;
+	background-color: #2ECC71;
+	border: 3px solid black;
+	width: 65%;
 	border-radius: 30px;
 }
