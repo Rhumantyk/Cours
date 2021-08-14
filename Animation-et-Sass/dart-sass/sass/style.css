@@ -1,0 +1,112 @@
+.btn {
+  background: #011c37;
+  color: #15DEA5;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  border-radius: 10rem;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.9em;
+  padding-top: 90px;
+  padding-left: 25px;
+}
+
+section {
+  padding-top: 40px;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+pre {
+  font-family: Arial;
+  font-size: 1.07em;
+  font-weight: bold;
+}
+
+div {
+  margin-bottom: 5px;
+}
+
+.Exemple_a_e1 {
+  margin-left: 25px;
+  background-color: #2ECC71;
+  border: 3px solid black;
+  width: 19.3%;
+  border-radius: 30px;
+}
+
+.Exemple_a_e2 {
+  margin-left: 25px;
+  background-color: #2ECC71;
+  border: 3px solid black;
+  width: 19%;
+  border-radius: 30px;
+}
+
+.Exemple_a_e3 {
+  margin-left: 25px;
+  background-color: #2ECC71;
+  border: 3px solid black;
+  width: 28.5%;
+  border-radius: 30px;
+}
+
+.Exemple_a_e4 {
+  margin-left: 25px;
+  background-color: #2ECC71;
+  border: 3px solid black;
+  width: 33%;
+  border-radius: 30px;
+}
+
+.Exemple_a_e5 {
+  margin-left: 25px;
+  background-color: #2ECC71;
+  border: 3px solid black;
+  width: 13%;
+  border-radius: 30px;
+}
+
+.Exemple_a_e6 {
+  margin-left: 25px;
+  background-color: #2ECC71;
+  border: 3px solid black;
+  width: 38%;
+  border-radius: 30px;
+}
+
+.Exemple_a_e7 {
+  margin-left: 25px;
+  background-color: #2ECC71;
+  border: 3px solid black;
+  width: 56%;
+  border-radius: 30px;
+}
+
+.Exemple_a_e8 {
+  margin-left: 25px;
+  background-color: #2ECC71;
+  border: 3px solid black;
+  width: 45%;
+  border-radius: 30px;
+}
+/*# sourceMappingURL=style.css.map */

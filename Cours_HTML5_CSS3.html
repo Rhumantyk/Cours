@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Cours.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	<title>Cours HTML5 CSS3</title>
+</head>
+
+<body>
+
+	<h1>Cours</h1>
+
+
+	<h2>A) Page HTML</h2>
+
+
+		<section>
+			<div class="Exemple_a">
+				<div class="Exemple_a_e8">
+					<pre>
+						<code>
+
+	&lt;!DOCTYPE html>
+	&lt;html lang="en">
+	&lt;head>
+		&lt;meta charset="UTF-8">
+		&lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+		&lt;meta name="description" content="Description du metatag">
+		&lt;link rel="stylesheet" href="style.css" type="text/css">
+		&lt;title>Document&lt;/title>
+	&lt;/head>
+	&lt;body>
+		
+	&lt;/body>
+	&lt;/html>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e7">
+					<pre>
+						<code>
+						Métatags
+							
+ Classique = &lt;meta name="description" content="Description du metatag">
+
+ (https://developers.facebook.com/tools/debug/)
+ Facebook = &lt;meta property="og:title" content="Titre optimisé pour Facebook"/>
+			 &lt;meta property="og:type" content="article si c'est un article, etc ..."/>
+			 &lt;meta property="og:url" content="http://www.example.com/"/>
+			 &lt;meta property="og:image" content="http://example.com/image.jpg"/>
+			 &lt;meta property="og:description" content="Description optimisée pour Facebook"/>
+
+ Twitter = &lt;meta name="twitter:card" content="summary">
+ &lt;meta name="twitter:site" content="@publisher_handle">
+ &lt;meta name="twitter:title" content="Page Title">
+ &lt;meta name="twitter:description" content="Page description less than 200 characters">
+ &lt;meta name="twitter:creator" content="@author_handle">
+ &lt;meta name="twitter:image" content="http://www.example.com/image.jpg"> (Minimum 200x200px)
+
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+
+
+
+
+
+
+
+				Web sémantique
+
+	<a href="https://schema.org/">Schema.org</a>
+	<a href="https://www.abondance.com/20140627-14046-fa
+	ut-il-integrer-les-balises-semantiques-schema-o
+	rg-ses-pages.html">Faut-il intégrer les balises sémantiques ?</a>
+	<a href="https://search.google.com/structured-data/testing-tool">Testing-tool</a>
+	<a href="https://seoscout.com/tools/schema-generator">Générateur de schémas</a>
+					</pre>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+	<h2>B) Liens</h2>
+
+
+
+
+		<section>
+			<div class="Exemple_a">
+
+				<div class="Exemple_a_e1">
+					<pre>
+						<code>
+
+		 Lien
+
+    &lt;p>&lt;a href="site.com">&lt;/a>&lt;/p>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+	      Div = Lien / Lien dans une Div (?)
+
+  &lt;a href="">&lt;div>&lt;/div>&lt;/a> + {display: contents;}
+
+  &lt;div>&lt;a href="">&lt;/a>&lt;/div> + {display: inline-block}
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e2">
+					<pre>
+						<code>
+							
+   Ancre même page (toutes balises)
+
+       id="ancre" + href"#ancre"
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+	        Ancre autre site
+
+    &lt;p>&lt;a href="site.com#ancre">Ancre&lt;/a>&lt;/p>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e2">
+					<pre>
+						<code>
+	      Info-bulle
+
+	&lt;a href="" title="">&lt;/a>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+	  	Nouvelle fenêtre
+
+     &lt;a href="" title="" target="_blank">&lt;/a>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+	    	  Lien email
+
+    &lt;a href="mailto:adressemail@truc.com">&lt;/a>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e2">
+					<pre>
+						<code>
+	  Télécharger fichier
+
+     &lt;a href="monfichier.zip">&lt;/a>
+						</code>
+					</pre>
+				</div>
+
+			</div>
+		</section>
+
+
+
+
+		
+
+
+
+
+	<h2>C) Image</h2>
+
+		<section>
+			<div class="Exemple_a">
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+
+
+							
+	   Image + Description (obligatoire)
+
+	 &lt;p>&lt;img src="" alt="Description">&lt;/p>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e4">
+					<pre>
+						<code>
+
+
+							
+	   Miniature cliquable (deux images même dossier)
+
+	     &lt;p>&lt;a href="">&lt;img src="" alt="">&lt;/a>&lt;/p>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e4">
+					<pre>
+						<code>
+	  Figure (aussi possible en dehors de paragraphe)
+
+		     &lt;figure>
+		     	&lt;img src="" alt="">
+		     	&lt;figcaption>
+		     		"légende"
+		     	&lt;/figcaption>
+		     &lt;/figure>
+						</code>
+					</pre>
+				</div>
+			</div>
+		</section>
+
+
+
+	<h2>D) CSS</h2>
+
+		<section>
+			<div class="Exemple_a">
+				<div class="Exemple_pas_code">
+					<p>class → .</p>
+				</div>
+
+				<div class="Exemple_pas_code">
+					<p>id → #</p>
+				</div>
+
+				<div class="Exemple_a_e5">
+					<pre>
+						<code>
+
+      &lt;span>&lt;/span>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e5">
+					<pre>
+						<code>
+
+        &lt;div>&lt;/div>
+						</code>
+					</pre>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+	<h2>E) CSS sélecteurs</h2>
+
+		<section>
+			<div class="Exemple_pas_code">
+				<p><a href="https://www.w3.org/Style/css3-selectors-updates/WD-css3-selectors-20010126.fr.html#selectors">Sélecteurs W3C</a></p>
+			</div>
+		</section>
+
+
+	<h2>F) Formatage CSS</h2>
+
+		<section>
+			<div class="Exemple_a">
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+			Taille
+
+	balise						
+	{
+	  font-size: px, em, large, %, small, ...;
+	}
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+			Police
+
+	balise						
+	{
+	  font-family: Arial, "Arial Black", ...;
+	}
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_pas_code2">
+					<p>Sites Polices</p>
+
+					<p><a href="https://www.fontsquirrel.com/">Fontsquirrel</a></p>
+					
+					<p><a href="https://www.dafont.com/fr/">Dafont</a></p>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+		Italique - Oblique - Normal
+
+	balise						
+	{
+	  font-style: italic, oblique, normal;
+	}
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e2">
+					<pre>
+						<code>
+		Gras
+
+     balise						
+     {
+       font-weight: bold, normal;
+     }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e6">
+					<pre>
+						<code>
+		      Soulignement et autres
+
+     balise						
+   {
+     text-decoration: underline, line-through, overline, blink, none;
+   }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+		     Alignement
+
+     balise						
+     {
+       text-align: left, center, right, justify;
+     }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e2">
+					<pre>
+						<code>
+	        Float
+
+         .class						
+         {
+           float: left, right;
+         }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e2">
+					<pre>
+						<code>
+	     Cesser Float
+
+     .class						
+     {
+       clear: left, right, both;
+     }
+						</code>
+					</pre>
+				</div>
+			</div>
+		</section>
+
+
+
+
+	<h2>G) Couleur et fond CSS</h2>
+
+		<section>
+			<div class="Exemple_a">
+				<div class="Exemple_a_e2">
+					<pre>
+	 				    <code>
+
+
+
+
+
+
+
+
+	       Couleur
+
+      balise						
+      {
+        color: blue, #FFA87E, ...;
+      }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+	 				    <code>
+
+
+
+
+
+
+
+
+	           Couleur de fond
+
+         balise						
+         {
+           background-color: blue, #FFA87E, ...;
+         }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e4">
+					<pre>
+	 				    <code>
+    Image de fond / Fixer image de fond / Répétition de fond /
+    Position du fond
+
+        balise						
+        {
+          background-image: url("site.com/image.png/gif/jpg");
+        }
+
+        balise						
+        {
+          background-attachment: fixed, scroll (par défaut);
+        }
+
+        balise						
+        {
+          background-repeat: no-repeat, repeat-x, repeat-y, repeat;
+        }
+
+        balise						
+        {
+          background-position: top, bottom, px, etc ...;
+        }
+
+
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e4">
+					<pre>
+	 				    <code>
+
+
+
+
+
+
+
+
+	           Opacité (RGBA possible)
+
+	        balise						
+	        {
+	          opacity: 0, 0.42, 1, ...;;
+	        }
+
+
+						</code>
+					</pre>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+	<h2>H) Bordures et ombres</h2>
+
+		<section>
+			<div class="Exemple_a">
+				<div class="Exemple_a_e4">
+					<pre>
+						<code>
+		            Bordure
+
+  balise						
+  {
+    border: largeur, couleur, type (dotted, solid, groove, ...);
+  }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+		   Bordures arrondies
+
+	  balise						
+	  {
+	    border-radius: 2px 15px 35px 3px;
+	  }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+		   Ombre des boîtes
+
+    balise						
+    {
+      box-shadow: 2px 15px 35px 3px black inset;
+    }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+		   Ombre du texte
+
+         balise						
+         {
+           text-shadow: 2px 15px 35px 3px black;
+         }
+						</code>
+					</pre>
+				</div>
+			</div>
+		</section>
+
+
+
+
+	<h2>I) Aparences dynamiques</h2>
+
+		<section>
+			<div class="Exemple_a">
+				<div class="Exemple_a_e5">
+					<pre>
+						<code>
+	  Survol
+
+        balise:hover						
+        {
+           
+        }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+	      Lors du clic (pendant uniquement)
+
+	           balise:active						
+	           {
+	           
+	           }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+	         Élément selectionné
+
+	           balise:focus						
+	           {
+	           
+	           }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+	           Lien déjà consulté
+
+	             balise:visited						
+	             {
+	           
+	             }
+						</code>
+					</pre>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+		<h2>J) Balises strucurantes</h2>
+		<section>
+			<div class="Exemple_a_e2">
+				<pre>
+					<code>
+
+
+	&lt;header>&lt;/header>
+	&lt;nav>&lt;/nav>
+	&lt;section>&lt;/section>
+	&lt;article>&lt;/article>
+	&lt;aside>&lt;/aside>
+	&lt;footer>&lt;/footer>
+
+					</code>
+				</pre>
+			</div>
+		</section>
+
+
+
+		<h2>K) Les boîtes</h2>
+		<section>
+			<div class="Exemple_a">
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+                      Largeur
+
+	    balise
+	    {
+	      width (min-/max-) % ou px;
+	    }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+                      Hauteur
+
+	    balise
+	    {
+	      height (min-/max-) % ou px;
+	    }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+                    Marge Intérieure
+
+    balise
+    {
+      padding (-top/-bottom/-left/-right) 2 ou 4 px;
+    }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+                    Marge Extérieure
+
+    balise
+    {
+      margin (-top/-bottom/-left/-right) 2 ou 4 px;
+    }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e2">
+					<pre>
+						<code>
+	   (widht +) Centrage
+
+             balise
+             {
+                margin: auto;
+             }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e4">
+					<pre>
+						<code>
+	   	       Dépassement
+
+ balise
+ {
+    overflow: visible (par défaut), hidden, scroll, auto;
+ }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e2">
+					<pre>
+						<code>
+	     Couper texte
+
+        balise
+        {
+           word-wrap: break-word;
+        }
+						</code>
+					</pre>
+				</div>
+			</div>
+		</section>
+
+
+
+		<h2>L) Tableau</h2>
+
+		<section>
+			<div class="Exemple_a">
+				<div class="Exemple_a_e2">
+					<pre>
+						<code>
+      Tableau / Ligne / Cellule
+
+
+
+	&lt;table>
+	      &lt;tr>
+		  &lt;td>&lt;/td>
+	      &lt;/tr>
+	&lt;/table>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e2">
+					<pre>
+						<code>
+         Ligne d'en-tête (th)
+
+	&lt;table>
+	      &lt;tr>
+		  &lt;th>&lt;/th>
+	      &lt;/tr>
+
+	      &lt;tr>
+		  &lt;td>&lt;/td>
+	      &lt;/tr>
+	&lt;/table>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e5">
+					<pre>
+						<code>
+     Titre du tableau
+     (À placer en 1er
+        dans table)
+
+
+
+    &lt;caption>&lt;/caption>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e2">
+					<pre>
+						<code>
+         Titre du tableau CSS
+
+
+
+
+    {
+    	caption-side: top, bottom;
+    }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e5">
+					<pre>
+						<code>
+       Gros tableau
+
+
+
+
+      &lt;thead>&lt;/thead>
+      &lt;tbody>&lt;/tbody>
+      &lt;tfoot>&lt;/tfoot>
+	 					</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e2">
+					<pre>
+						<code>
+            Fusion colonnes
+
+      &lt;td colspan="CHIFFRE">&lt;/td>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e2">
+					<pre>
+						<code>
+            Fusion lignes
+
+      &lt;td rowspan="CHIFFRE">&lt;/td>
+						</code>
+					</pre>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+		<h2>M) Formulaire</h2>
+
+		<section>
+			<div class="Exemple_a">
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+
+
+		      Formulaire	
+
+      &lt;form method="post" action="page.php">&lt;/form>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+		 Zone de texte monoligne	
+
+       &lt;form>
+      	 &lt;p>&lt;input type="text" name="pseudo">&lt;/p>
+       &lt;/form>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e7">
+					<pre>
+						<code>
+						Libellé	
+
+      &lt;form method="post" action="page.php">
+     	 &lt;p>&lt;label for="pseudo">Votre pseudo&lt;/label> : &lt;input type="text" name="pseudo" id="pseudo">&lt;/p>
+      &lt;/form>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e7">
+					<pre>
+						<code>
+						   input
+
+	   	  /// Aggrandir / Nbr max caractères / Préremplissage / Indication contenu	
+
+&lt;input type="text" name="pseudo" id="pseudo" size="30" maxlength="10" value="pseudo" placeholder="Ex : Zoro">
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+
+		   Zone mot de passe	
+
+       &lt;input type="password" name="pass" id="pass">
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e7">
+					<pre>
+						<code>
+		 			Zone de texte multiligne	
+
+	       &lt;form>
+	      	 &lt;p>&lt;label for="ameliorer">Que faut-il améliorer ?&lt;/label>&lt;br>
+	      	 	&lt;textarea name="améliorer" id="améliorer" cols="30" rows="10">&lt;/textarea>&lt;/p>
+	       &lt;/form>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e5">
+					<pre>
+						<code>
+	 textarea
+
+      width et height
+
+       rows et cols
+
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e5">
+					<pre>
+						<code>
+
+       Saisir Email
+
+   &lt;input type="email">
+
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e5">
+					<pre>
+						<code>
+							
+       Saisir URL
+
+   &lt;input type="url">
+
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e5">
+					<pre>
+						<code>
+							
+     Saisir téléphone
+
+    &lt;input type="tel">
+
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e5">
+					<pre>
+						<code>
+							
+      Saisir nombre
+
+  &lt;input type="number">
+      (min/max/step)
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e5">
+					<pre>
+						<code>
+							
+          Curseur
+
+   &lt;input type="range">
+      (min/max/step)
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e5">
+					<pre>
+						<code>
+							
+      Saisir couleur
+
+   &lt;input type="color">
+
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e4">
+					<pre>
+						<code>
+							
+       			   Saisir date
+
+   &lt;input type="date/time/week/month/datetime/datetime-local">
+
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e5">
+					<pre>
+						<code>
+							
+    Champ de recherche
+
+   &lt;input type="search">
+
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+							
+       Case(s) à cocher (souvent suivit de label)
+
+   	&lt;input type="checkbox" name="Exemple">
+
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+							
+       		Case(s) coché(es) par défaut
+
+     &lt;input type="checkbox" name="Exemple" checked>
+
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e7">
+					<pre>
+						<code>
+							
+       					   Un seul choix
+
+ &lt;input type="radio" name="age" value="moins15" id="moins15" /> &lt;label for="moins15">Moins de 15 ans&lt;/label>
+
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e6">
+					<pre>
+						<code>
+							
+       			   Liste déroulante
+
+  &lt;form method="post" action="traitement.php">
+    &lt;p>
+        &lt;label for="pays">Dans quel pays habitez-vous ?&lt;/label>&lt;br />
+        &lt;select name="pays" id="pays">
+            &lt;option value="france">France&lt;/option>
+            &lt;option value="espagne">Espagne&lt;/option>
+            &lt;option value="italie">Italie&lt;/option>
+            &lt;option value="royaume-uni">Royaume-Uni&lt;/option>
+            &lt;option value="canada">Canada&lt;/option>
+            &lt;option value="etats-unis">États-Unis&lt;/option>
+            &lt;option value="chine">Chine&lt;/option>
+            &lt;option value="japon">Japon&lt;/option>
+        &lt;/select>
+    &lt;/p>
+ &lt;/form>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+
+
+
+
+
+							
+    Liste déroulante (option sélectionée par défaut)
+
+    &lt;option value="canada" selected>Canada&lt;/option>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e6">
+					<pre>
+						<code>
+							
+       			Liste déroulante grouper options
+
+  &lt;form method="post" action="traitement.php">
+    &lt;p>
+        &lt;label for="pays">Dans quel pays habitez-vous ?&lt;/label>&lt;br />
+        &lt;select name="pays" id="pays">
+            &lt;optgroup label="Europe">
+                &lt;option value="france">France&lt;/option>
+                &lt;option value="espagne">Espagne&lt;/option>
+                &lt;option value="italie">Italie&lt;/option>
+                &lt;option value="royaume-uni">Royaume-Uni&lt;/option>
+            &lt;/optgroup>
+            &lt;optgroup label="Amérique">
+                &lt;option value="canada">Canada&lt;/option>
+                &lt;option value="etats-unis">Etats-Unis&lt;/option>
+            &lt;/optgroup>
+            &lt;optgroup label="Asie">
+                &lt;option value="chine">Chine&lt;/option>
+                &lt;option value="japon">Japon&lt;/option>
+            &lt;/optgroup>
+        &lt;/select>
+    &lt;/p>
+ &lt;/form>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e6">
+					<pre>
+						<code>
+							
+       			Regrouper les champs + Légende
+
+	 &lt;form method="post" action="traitement.php">
+	 
+	   &lt;fieldset>
+	       &lt;legend>Vos coordonnées&lt;/legend> &lt;!-- Titre du fieldset --> 
+
+	       &lt;label for="nom">Quel est votre nom ?&lt;/label>
+	       &lt;input type="text" name="nom" id="nom" />
+
+	       &lt;label for="prenom">Quel est votre prénom ?&lt;/label>
+	       &lt;input type="text" name="prenom" id="prenom" />
+	 
+	       &lt;label for="email">Quel est votre e-mail ?&lt;/label>
+	       &lt;input type="email" name="email" id="email" />
+
+	   &lt;/fieldset>
+	 
+	   etc ...
+
+	&lt;/form>
+
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e4">
+					<pre>
+						<code>
+							
+     	      Selectionner automatiquement un champ
+
+     &lt;input type="text" name="prenom" id="prenom" autofocus />
+
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e4">
+					<pre>
+						<code>
+							
+     	      	     Champ obligatoire
+ 
+     &lt;input type="text" name="prenom" id="prenom" required />
+
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+							
+     	      Élément requis / invalide
+ 
+       :required / :invalid
+       {
+       	  (par exemple)background-color: red;
+       }
+
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+							
+
+     	      	   Bouton d'envoi
+ 
+       &lt;input type="submit" value="Envoyer" />
+
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+							
+							
+     	      	 Bouton remise à zéro
+ 
+      &lt;input type="reset" value="Remise à zéro" />
+
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e4">
+					<pre>
+						<code>
+							
+							
+     	      	   Bouton d'envoi avec image
+ 
+     &lt;input type="submit" value="Envoyer" src="image.png" />
+
+						</code>
+					</pre>
+				</div>
+			</div>
+		</section>
+
+
+
+		<h2>N) Musique</h2>
+
+		<section>
+			<div class="Exemple_a">
+				<div class="Exemple_a_e1">
+					<pre>
+						<code>
+
+
+	     Insérer audio
+
+    &lt;audio src="###.mp3">&lt;/audio>
+						</code>
+					</pre>
+				</div>
+				
+				<div class="Exemple_a_e6">
+					<pre>
+						<code>
+
+ 
+	     		        Options audio
+
+     &lt;audio src="###.mp3" controls width loop autoplay preload>&lt;/audio>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e1">
+					<pre>
+						<code>
+
+	Insérer plusieurs sources
+
+      &lt;audio>
+     	  &lt;source src="###.mp3">
+     	  &lt;source src="###.ogg">
+      &lt;/audio>
+						</code>
+					</pre>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+		<h2>O) Vidéo</h2>
+
+		<section>
+			<div class="Exemple_a">
+				<div class="Exemple_a_e2">
+					<pre>
+						<code>
+
+
+	     Insérer vidéo
+
+    &lt;video src="###.webm">&lt;/video>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e8">
+					<pre>
+						<code>
+
+
+	     			  Options vidéo
+
+    &lt;audio src="###.mp3" poster controls width height loop autoplay preload>&lt;/audio>
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+
+     Insérer plusieurs sources (mp4 toujours en 1er)
+
+      &lt;video controls poster="###.jpg" width="600">
+      	&lt;source src="###.mp4">
+      	&lt;source src="###.ogv">
+      &lt;/video>
+						</code>
+					</pre>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+		<h2>P) Media Queries</h2>
+
+		<section>
+			<div class="Exemple_a">
+				<div class="Exemple_a_e7">
+					<pre>
+						<code>
+
+
+      						Applications
+
+   .css différent :
+   &lt;link rel="stylesheet" media="screen and (max-width: 128px)" type="text/css" href="machin_resolution.css">
+
+   dans le .css actuel :
+   @media screen and (max-width: 1280px)
+   {
+
+   }
+
+   dans &lt;head>&lt;/head> :
+   &lt;meta name="viewport" content="width=device-width"> (ici viewport = largeur de l'écran)
+					</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+
+    	 	   Principales règles
+
+      color (bits/pixels)
+      height/width (affichage fenêtre)
+      device-height/width (- du périphérique)
+      orientation (portrait ou paysage)
+      media (écran de sortie)
+      	screen (écran classique)
+      	handheld (mobile. Préferer max-device width: px)
+      	print (impression)
+      	tv (tv)
+      	projection (projecteur)
+      	all (tous type d'écrans)
+
+      -min/-max (sur beaucoup d'entre-eux)
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e7">
+					<pre>
+						<code>
+
+     					only / and / not
+
+	      /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+	@media screen and (max-width: 1280px)
+
+	/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+	@media all and (min-width: 1024px) and (max-width: 1280px)
+
+	/* Sur les téléviseurs */
+	@media tv
+
+	/* Sur tous types d'écrans orientés verticalement */
+	@media all and (orientation: portrait)
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e2">
+					<pre>
+						<code>
+
+	Exemple de changement
+
+  @media all and (max-width: 10224px)	
+  {
+	  #bloc_machin
+	  {
+		  width: auto;
+	  }
+  }	
+						</code>
+					</pre>
+				</div>
+			</div>
+		</section>	
+
+
+		<h2>Q) Éléments remplacés (Externes au CSS)</h2>
+
+		<section>
+			<div class="Exemple_a">
+				<div class="Exemple_a_e3">
+					<pre>
+						<code>
+		   Éléments remplacés
+
+	  &lt;img>
+	  &lt;video>&lt;/video>
+	  &lt;iframe>&lt;/iframe>
+	  &lt;input> (type : image)
+	  &lt;object>&lt;/object> (cas spécifique)
+	  &lt;option>&lt;/option> (cas spécifique)
+	  &lt;audio>&lt;/audio> (cas spécifique)
+	  &lt;canvas>&lt;/canvas> (cas spécifique)
+	  &lt;applet>&lt;/applet> (cas spécifique)
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e4">
+					<pre>
+						<code>
+
+
+		    Adaptation au conteneur				
+
+	 balise
+	 {
+	  oject-fit : fill, contain, cover, none, scale-down;
+	 }
+						</code>
+					</pre>
+				</div>
+
+				<div class="Exemple_a_e4">
+					<pre>
+						<code>
+
+
+		            Alignement				
+
+    balise
+    {
+     oject-position : ##% #%, right top, left bottom, ##px #px;
+    }
+						</code>
+					</pre>
+				</div>
+			</div>
+		</section>
+
+
+		<h2>Q) À approfondir/apprendre</h2>
+
+		<section>
+			<div>
+				<p>Custum font-face. Different weight, style. Variable font !!!<br>
+				height = calc (100% -"N"px)<br>
+				CSS Tricks <br>
+				Pourquoi liens doivent être en display:content ou display:inline-block ... Pas compris ce que ça change <br> 
+				Hover sur plusieurs éléments (cf. filtres du Projet 2 OpenClassrooms) <br>
+				Changer couleur Fontawesome (logo + background)</p>
+			</div>
+		</section>
+</body>
+</html>
