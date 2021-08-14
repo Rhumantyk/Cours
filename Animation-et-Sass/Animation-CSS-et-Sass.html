@@ -50,25 +50,6 @@
 				</pre>
 			</div>
 
-			<div class="T7">
-				<pre>
-					<code>
-							Map
-
-		Map = Liste de Clés/valeurs (couleur/calcul/booléen) à appeler via "map-get"
-
-		$map: (cle1: valeur1, cle2: valeur2, cle3: valeur3);
-
-		.block 
-		{
-			font-size: map-get($map, cle1);
-		}
-					</code>
-				</pre>
-			</div>
-		
-
-
 			<div class="T9">
 				<pre>
 					<code>
@@ -88,10 +69,22 @@
 	}
 
 
+	Map
+
+	Map = Liste de Clés/valeurs (couleur/calcul/booléen) à appeler via "map-get"
+
+	$map: (cle1: valeur1, cle2: valeur2, cle3: valeur3);
+
+	.block 
+	{
+		font-size: map-get($map, cle1);
+	}
+
+
 	Variable à liste + map
 	On appelle la map et une ou plusieurs valeurs
 
-	$nomdelavariableàliste+map: (logo:V, heading:V, project-heading:V, logo:V); → .class{map-get($font-size, label);}
+	$nomdelavariableàlisteplusmap: (logo:V, heading:V, project-heading:V, logo:V); → .class{map-get($font-size, label);}
 
 
 	Boucles
@@ -166,6 +159,31 @@ nav
  Adjacent .parent + .adjacent {}
 
  & + Pseudo-classe. &:hover/...{}
+					</code>
+				</pre>
+			</div>
+
+			<div class="T7">
+				<pre>
+					<code>
+					Map avec @mixin
+
+$exemplemap:
+   (
+   active: 
+      (bg: $color-primary, border: $color-secondary), 
+   focus: 
+      (bg: $color-secondary, border: $color-primary)
+   );
+
+@mixin exemplemap($permetdechoisirundes2)
+{
+	$permetdenepasrépéterlaligneaudessus: map-get(exemplemap, $permetdechoisiractiveoufocus);
+	border: .1rem solid map-get($permetdenepasrépéterlaligneaudessus, border);
+	background-color: map-get($permetdenepasrépéterlaligneaudessus, bg);
+}
+
+@include exemplemap(focus);
 					</code>
 				</pre>
 			</div>
