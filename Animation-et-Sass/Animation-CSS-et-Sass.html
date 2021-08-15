@@ -224,10 +224,23 @@ $exemplemap:
 				</pre>
 			</div>
 
-			<div class="T1">
+			<div class="T3">
 				<pre>
 					<code>
+			@extend
 
+	(À n'utiliser qu'en dernier recours, sur des
+	classes parentes inchangeable ou presque)
+
+		.class
+		{
+			display: flex;
+		}
+
+		.classextend
+		{
+			@extend;
+		}
 					</code>
 				</pre>
 			</div>
