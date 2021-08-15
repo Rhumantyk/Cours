@@ -11,7 +11,7 @@
 	<h1>Cours</h1>
 
 
-	<h2>A) SASS</h2>
+	<h2>A) Généralités SASS</h2>
 		<section class="A">
 			<div class="T1">
 				<pre>
@@ -50,11 +50,57 @@
 				</pre>
 			</div>
 
+			<div class="T1">
+				<pre>
+					<code>
+		Nesting
+
+nav 
+{
+   ul 
+   {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+   }
+
+   li 
+   {
+      display: inline-block;
+   }
+
+   a 
+   {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+   }
+}
+					</code>
+				</pre>
+			</div>
+
+			<div class="T1">
+				<pre>
+					<code>
+	    Combinateurs
+
+ Parent → .parent {}
+ Descendant → .parent .descendant {}
+ Parent > Enfant → .parent > .child {}
+ Adjacent .parent + .adjacent {}
+
+ & + Pseudo-classe. &:hover/...{}
+					</code>
+				</pre>
+			</div>
+		</section>
+
+	<h2>B) Préprocesseurs</h2>
+		<section class="A">
 			<div class="T9">
 				<pre>
 					<code>
-		       Préprocesseurs
-
 	Variable classique
 
 	$nomdelavariable: colueur/calcul/booléen
@@ -117,52 +163,10 @@
 					</code>
 				</pre>
 			</div>
+		</section>
 
-			<div class="T1">
-				<pre>
-					<code>
-		Nesting
-
-nav 
-{
-   ul 
-   {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-   }
-
-   li 
-   {
-      display: inline-block;
-   }
-
-   a 
-   {
-      display: block;
-      padding: 6px 12px;
-      text-decoration: none;
-   }
-}
-					</code>
-				</pre>
-			</div>
-
-			<div class="T1">
-				<pre>
-					<code>
-	    Combinateurs
-
- Parent → .parent {}
- Descendant → .parent .descendant {}
- Parent > Enfant → .parent > .child {}
- Adjacent .parent + .adjacent {}
-
- & + Pseudo-classe. &:hover/...{}
-					</code>
-				</pre>
-			</div>
-
+	<h2>C) Mixins / Extend</h2>
+		<section class="A">
 			<div class="T7">
 				<pre>
 					<code>
@@ -202,24 +206,24 @@ nav
 			<div class="T7">
 				<pre>
 					<code>
-					Map avec @mixin
+						Map avec @mixin
 
-$exemplemap:
-   (
-   active: 
-      (bg: $color-primary, border: $color-secondary), 
-   focus: 
-      (bg: $color-secondary, border: $color-primary)
-   );
+	$exemplemap:
+	(
+	active: 
+		(bg: $color-primary, border: $color-secondary), 
+	focus: 
+		(bg: $color-secondary, border: $color-primary)
+	);
 
-@mixin exemplemap($permetdechoisirundes2)
-{
-	$permetdenepasrépéterlaligneaudessus: map-get(exemplemap, $permetdechoisiractiveoufocus);
-	border: .1rem solid map-get($permetdenepasrépéterlaligneaudessus, border);
-	background-color: map-get($permetdenepasrépéterlaligneaudessus, bg);
-}
+	@mixin exemplemap($permetdechoisirundes2)
+	{
+		$permetdenepasrépéterlaligneaudessus: map-get(exemplemap, $permetdechoisiractiveoufocus);
+		border: .1rem solid map-get($permetdenepasrépéterlaligneaudessus, border);
+		background-color: map-get($permetdenepasrépéterlaligneaudessus, bg);
+	}
 
-@include exemplemap(focus);
+	@include exemplemap(focus);
 					</code>
 				</pre>
 			</div>
@@ -229,8 +233,9 @@ $exemplemap:
 					<code>
 			@extend
 
-	(À n'utiliser qu'en dernier recours, sur des
-	classes parentes inchangeable ou presque)
+   (À n'utiliser qu'en dernier recours, sur des classes 
+   parentes inchangeable ou presque. Fonctionne aussi 
+   sur des classes silencieuses)
 
 		.class
 		{
