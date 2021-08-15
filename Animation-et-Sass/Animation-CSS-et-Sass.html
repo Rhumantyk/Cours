@@ -163,6 +163,41 @@ nav
 				</pre>
 			</div>
 
+			<div class="T1">
+				<pre>
+					<code>
+				@mixin / @include
+
+À placer dans un fichier scss autre (@mixin) que le fichier principal (@include).
+
+@mixin heading-bloc ()
+{
+	text-shadow: Xrem, Xrem, blue;
+}
+
+@include heading-bloc();
+
+
+				@mixin à argument(s) [variable(s) dans une @mixin]
+
+Placer des variables DANS la @mixin + Déclarer dans les () de @mixin + Dans le même ordre dans les () d'@include
+@mixin button ($head-font, $background-color, $color)
+{
+	font-family: $head-font;
+	...
+	background-color: $background-color;
+	color: $color;
+}
+
+@include button ($head-font, $background-color, $color)
+
+
+
+
+					</code>
+				</pre>
+			</div>
+
 			<div class="T7">
 				<pre>
 					<code>
