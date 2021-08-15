@@ -51,6 +51,10 @@ div {
   margin-bottom: 5px;
 }
 
+img {
+  height: 600px;
+}
+
 .T1 {
   margin-left: 25px;
   background-color: #2ECC71;
