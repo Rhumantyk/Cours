@@ -279,16 +279,16 @@ nav
 			</div>
 		</section>
 
-		<h2>E) Les conditions</h2>
+		<h2>E) Les conditions/boucles</h2>
 		<section class="A">
 			<div class="T3">
 				<pre>
 					<code>
   Action(s) en fonction d’une ou plusieurs conditions.
 
-		@if, @else / and, or
+	    @if, @else, @each, ... / and, or
 
-		
+
 
 	@if (lightness($color) > 25%)
 	{
@@ -312,7 +312,77 @@ nav
 			</div>
 		</section>
 
-		<h2>F) </h2>
+		<h2>F) Media queries</h2>
+		<section class="A">
+			<div class="T3_Rouge">
+				<pre>
+					<code>
+			CSS
+
+	  @media screen and (max-width: 1280px)
+	  {
+
+	  }
+					</code>
+				</pre>
+			</div>
+
+			<div class="T3">
+				<pre>
+					<code>
+			SCSS
+
+		.randomclass
+		{
+			display : flex;
+			@media (max-width: 599px)
+			{
+				display: none;
+			}
+		}
+					</code>
+				</pre>
+			</div>
+
+			<div class="T8">
+				<pre>
+					<code>
+			Map Breakpoints (stocke les breakpoints)
+
+	$breakpoints: (
+		mobile: 599px,
+		laptop: 1024px
+		);
+
+	@mixin mobile-only
+	{
+		@media screen and (max-width: map-get($breakpoints, mobile))
+		{
+			background-color: blue;
+		}
+	}
+
+	.randomclass
+	{
+		display: flex;
+		@include mobile-only;
+	}
+					</code>
+				</pre>
+			</div>
+
+			<div class="T4">
+				<pre>
+					<code>
+    @content = Placeholder pour des media queries spécifiques	
+
+    Pas compris l'intérêt et comment l'utiliser.
+					</code>
+				</pre>
+			</div>
+		</section>
+
+		<h2>G) </h2>
 		<section class="A">
 			<div class="T3">
 				<pre>
