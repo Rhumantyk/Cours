@@ -411,7 +411,89 @@ nav
 			</div>
 		</section>
 
-		<h2>H) Les Pseudos-classes</h2>
+		<h2>H) Les Transitions</h2>
+		<section class="A">
+			<div class="T6">
+				<pre>
+					<code>
+		     Éléments nécessaires + Exemple
+
+	  Propriété CSS à modifier --> .btn
+	  Valeur initiale du CSS --> transform: scale(1)
+	  Valeur finale du CSS --> transform: scale(1.15)
+	  Nom de la propriété + Durée --> transition: transform 400ms
+	  Pseudo-classe déclenchant l’animation --> :hover
+					</code>
+				</pre>
+			</div>
+
+			<div class="T3">
+				<pre>
+					<code>
+	     Exemple avec le bouton .btn +15%
+
+	.btn
+	{
+		background-color: red;
+		color: black;
+		padding: 2rem 3rem;
+		border-radius: 10rem;
+		transform: scale(1);
+		transition: transform 400ms;
+		&:hover
+		{
+			transform: scale(1.15);
+		}
+	}
+					</code>
+				</pre>
+			</div>
+
+			<div class="T6">
+				<pre>
+					<code>
+		Pseudo-classe combinée(s) avec les classe(s)
+
+	   Propriété CSS à modifier --> .ball
+	   Valeur initiale du CSS --> transform: scale(1.0)
+	   Valeur finale du CSS --> transform: scale(0.1)
+	   Nom de la propriété + Durée --> transition: transform 4000ms
+	   Pseudo-classe déclenchant l’animation --> :active + .ball
+					</code>
+				</pre>
+			</div>
+
+			<div class="T3">
+				<pre>
+					<code>
+		   Exemple combinaisons
+	.btn
+	{
+		background-color: red;
+		color: black;
+		padding: 2rem 3rem;
+		border-radius: 10rem;
+		&:active + .ball
+		{
+			transform: scale(1.0);
+		}
+	}
+
+	.ball
+	{
+		width: xxx;
+		height: xxx;
+		background: pink;
+		...
+		transform: scale(0.1);
+		transition: transform 4000ms;
+	}
+					</code>
+				</pre>
+			</div>
+		</section>
+
+		<h2>I) Les Pseudos-classes</h2>
 		<section class="A">
 			<div class="T8">
 				<pre>
@@ -424,7 +506,7 @@ nav
 			</div>
 		</section>
 
-		<h2>H) </h2>
+		<h2>J) </h2>
 		<section class="A">
 			<div class="T3">
 				<pre>
