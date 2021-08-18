@@ -491,6 +491,45 @@ nav
 					</code>
 				</pre>
 			</div>
+
+			<div class="T3">
+				<pre>
+					<code>
+      all = Transition pour toutes les propriétés
+
+	.btn
+	{
+		...
+		transition: all 450;
+		&:hover
+		{
+			transform: scale(1.13);
+			background-color: black;
+		}
+	}
+					</code>
+				</pre>
+			</div>
+
+			<div class="T3">
+				<pre>
+					<code>
+		Séparer les propriétés
+
+  transition: transform 450ms, background-color 300ms;
+					</code>
+				</pre>
+			</div>
+
+			<div class="T3">
+				<pre>
+					<code>
+     Retarder le début d'une transition (2e valeur)
+
+	transition: background-color 300ms 150ms;
+					</code>
+				</pre>
+			</div>
 		</section>
 
 		<h2>I) Les Pseudos-classes</h2>
