@@ -530,9 +530,57 @@ nav
 					</code>
 				</pre>
 			</div>
+
+			<div class="T6">
+				<pre>
+					<code>
+		Ease-in/out (Accélération/Décélération)
+
+     tranisiton-timing-function = Gère l'accélération d'une transition
+
+     transition: transform 1000ms ease-in-out; --> vitesse + puis -
+
+     transition: transform 1000ms ease-in; --> lent au départ
+
+     transition: transform 1000ms ease-out; --> freine plus tôt.
+					</code>
+				</pre>
+			</div>
+
+			<div class="T6">
+				<pre>
+					<code>
+		    Cubic-bezier = (X1, Y1, X2, Y2)
+
+     Pour une progression non linéaire des animations et transitions
+
+     Ex avec ease-in-out :
+     transition-timing-function: cubic-bezier(.42, 0, .58, 1);
+					</code>
+				</pre>
+			</div>
+
+			<div class="T3">
+				<pre>
+					<code>
+Transform
+
+transform + scale() = Grossissement de manière uniforme
+
+transform + scaleY()/X() = Grossissement vertical/horrizontal
+
+transform + scale(n, n) = Grossissement à volume constant
+
+
+transform + translate(A, B) = Déplacement d'un point A à un point B
+
+transform + translateY()/X() = Déplacement vertical/horrizontal
+					</code>
+				</pre>
+			</div>
 		</section>
 
-		<h2>I) Les Pseudos-classes</h2>
+		<h2>I) Sources/Aides utiles</h2>
 		<section class="A">
 			<div class="T8">
 				<pre>
@@ -540,6 +588,26 @@ nav
 			    Pseudo-classes les plus utilisées
 
    <img src="Pseudo_classes_Utiles.JPG" alt="Les Pseudos-classes les plus utilisée" class="Pseudo_Class_Img">			
+					</code>
+				</pre>
+			</div>
+
+			<div class="T3">
+				<pre>
+					<code>
+	Pour voir la performance d'une animations
+
+		      <a href="https://csstriggers.com/">Csstriggers</a>
+					</code>
+				</pre>
+			</div>
+
+			<div class="T2">
+				<pre>
+					<code>
+	  Meilleurs rendus
+
+  Privilégier: transform et oppacity
 					</code>
 				</pre>
 			</div>
