@@ -606,7 +606,7 @@ nav
 			</div>
 		</section>
 
-		<h2>I) Sources/Aides utiles</h2>
+		<h2>I) Sources/Aides utiles pour les animations</h2>
 		<section class="A">
 			<div class="T8">
 				<pre>
@@ -641,12 +641,20 @@ nav
 			</div>
 		</section>
 
-		<h2>J) </h2>
+		<h2>J) Les Keyframes</h2>
 		<section class="A">
-			<div class="T3">
+			<div class="T7">
 				<pre>
 					<code>
+				    Déclenchement dès le chargement de la page.
 
+		   Sinon, il faut une pseudo-classe appliquée à un élément/selecteur différent.
+
+
+
+   animation-delay = Retarder l'animations
+
+   animation-fill-mode: backwards/forwards/both = Manières d'appliquer les style avant et après exécution.
 					</code>
 				</pre>
 			</div>
@@ -654,10 +662,65 @@ nav
 			<div class="T3">
 				<pre>
 					<code>
+	Exemples d'utilisations (% ou from/to)
 
+	@keyframes progress-bar
+	{
+		0% / from
+		{
+			transform: scaleX(0);
+		}
+		100% / to
+		{
+			transform: scale(1);
+		}
+	}
+					</code>
+				</pre>
+			</div>
+
+			<div class="T1">
+				<pre>
+					<code>
+      Keyframe avec plusieurs %
+
+	@keyframes progress-bar
+	{
+	   85%, 100%
+	   {
+		opacity: 1;
+	   }
+	}			
 					</code>
 				</pre>
 			</div>
 		</section>
+
+		<h2>K) Sources/Aides utiles pour les keyframes</h2>
+		<section class="A">
+		<div class="T3">
+			<pre>
+				<code>
+		     Liens utiles
+
+	<a href="https://webcode.tools/generators/css/keyframe-animation">Webtool CSS keyframe-animation</a>
+
+	<a href="https://screenlane.com/?ref=uimovement">ScreenLane.com</a>
+
+	<a href="https://dribbble.com/">Dribble.com</a>
+
+	<a href="https://www.awwwards.com/websites/animation/">Awwwards.com</a>
+				</code>
+			</pre>
+		</div>
+
+		<div class="T3">
+			<pre>
+				<code>
+
+				</code>
+			</pre>
+		</div>
+	</section>
 </body>
 </html>
